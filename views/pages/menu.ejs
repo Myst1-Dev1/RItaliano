@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <%- include('../partials/head') %> 
+    <title>Menu</title>
+
+<body>
+
+    <%- include('../partials/header'); %>
+
+
+        <div class="menu-text d-flex justify-content-center align-itens-center aliceblue">
+        <h1>Menu</h1>
+         </div>
+
+         <div class="menu-services container mb-5">
+
+            <h2 class="aliceblue text-center">Serviços</h2>
+
+            <div class="services-icons container d-flex justify-content-between align-itens-center py-5">
+
+                <div class="service1 d-flex justify-content-center align-itens-center flex-column mb-4">
+                    <i class="fa-solid fa-pizza-slice"></i>
+                    <h2>Rodizio</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text
+                        of the printing and typesetting industry</p>
+                </div>
+
+                <div class="service1 d-flex justify-content-center align-itens-center flex-column mb-4">
+                    <i class="fa-solid fa-utensils"></i>
+                    <h2>Self Service</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text
+                        of the printing and typesetting industry</p>
+                </div>
+
+                <div class="service1 d-flex justify-content-center align-itens-center flex-column mb-4">
+                    <i class="fa-solid fa-motorcycle"></i>
+                    <h2>Entrega</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text
+                        of the printing and typesetting industry</p>
+                </div>
+            </div>
+         </div>
+
+         <!-- Menu -->
+
+         <ul class="container w-50 nav nav-tabs nav-justified menu-restaurant mb-5 border-0">
+            <li class="nav-item"> <a href="#food" class="nav-link active bg-danger border-dark" role="tab" data-bs-toggle="tab" aria-current="true"> 
+                
+                <div class="menu-food">
+                    <i class="fa-solid fa-plate-wheat"></i>    
+                <h2>Pratos</h2>
+            </div>
+
+            </a></li>
+
+            <div class="px-3"></div>
+
+            <li class="nav-item"> <a href="#drink" class="nav-link bg-danger border-dark" data-toggle="tab" role="tab" data-bs-toggle="tab">
+                 
+                <div class="menu-food">
+                    <i class="fa-solid fa-champagne-glasses"></i>   
+                <h2>Bebidas</h2>
+            </div>
+                
+                </a></li>
+
+                <div class="px-3"></div>
+
+            <li class="nav-item"> <a href="#dissert" class="nav-link bg-danger border-dark" data-toggle="tab" role="tab" data-bs-toggle="tab">
+                 
+                <div class="menu-food">
+                    <i class="fa-solid fa-cake-candles"></i>  
+                <h2>Sobremesas</h2>
+            </div>
+                
+                </a></li>
+
+                <div class="px-3"></div>
+          </ul>
+       
+          <div class="tab-content container mb-5" id="nav-tabContent">
+            <div id="food" class="tab-pane fade show active">
+
+               <div class="pratos d-flex justify-content-between align-itens-center container mb-4">
+
+                <div class="prato1 mb-4">
+                    <div class="img-prato mb-3">
+                        <img src="imgs/pizza1I.jpg" alt="">
+                    </div>
+                    <h2>Pizza</h2>
+                    <h3>R$:35,00</h3>
+                    <button class="btn-sobre mb-2">Comprar</button>
+                </div>
+
+                <div class="prato1 mb-4">
+                    <div class="img-prato mb-3">
+                        <img src="imgs/lasanha1.jpg" alt="">
+                    </div>
+                    <h2>Lasanha</h2>
+                    <h3>R$:22,90</h3>
+                    <button class="btn-sobre mb-2">Comprar</button>
+                </div>
+
+                <div class="prato1 mb-4">
+                    <div class="img-prato mb-3">
+                        <img src="imgs/fetuccine.jfif" alt="">
+                    </div>
+                    <h2>Fettuccine</h2>
+                    <h3>R$:12,50</h3>
+                    <button class="btn-sobre mb-2">Comprar</button>
+                </div>
+                
+               </div>
+
+               <!--  -->
+               
+               <div class="pratos d-flex justify-content-between align-itens-center container">
+
+                <div class="prato1 mb-4">
+                    <div class="img-prato mb-3">
+                        <img src="imgs/arancini.jpg" alt="">
+                    </div>
+                    <h2>Arancini</h2>
+                    <h3>R$:14,70</h3>
+                    <button class="btn-sobre mb-2">Comprar</button>
+                </div>
+
+                <div class="prato1 mb-4">
+                    <div class="img-prato mb-3">
+                        <img src="imgs/ossobuco.jpg" alt="">
+                    </div>
+                    <h2>Ossobuco</h2>
+                    <h3>R$:21,40</h3>
+                    <button class="btn-sobre mb-2">Comprar</button>
+                </div>
+
+                <div class="prato1 mb-4">
+                    <div class="img-prato mb-3">
+                        <img src="imgs/orechiete.jpg" alt="">
+                    </div>
+                    <h2>Orecchiette</h2>
+                    <h3>R$:24,90</h3>
+                    <button class="btn-sobre mb-2">Comprar</button>
+                </div>
+                
+               </div>
+
+            </div>
+
+
+            <div id="drink" role="tabpanel" class="tab-pane fade show">
+             
+                <div class="pratos d-flex justify-content-between align-itens-center container mb-4">
+
+                    <div class="prato1 mb-4">
+                        <div class="img-prato mb-3">
+                            <img src="imgs/bellini.jpg" alt="">
+                        </div>
+                        <h2>Bellini</h2>
+                        <h3>R$:4,20</h3>
+                        <button class="btn-sobre mb-2">Comprar</button>
+                    </div>
+    
+                    <div class="prato1 mb-4">
+                        <div class="img-prato mb-3">
+                            <img src="imgs/spritz.jpg" alt="">
+                        </div>
+                        <h2>Spritz</h2>
+                        <h3>R$:3,80</h3>
+                        <button class="btn-sobre mb-2">Comprar</button>
+                    </div>
+    
+                    <div class="prato1 mb-4">
+                        <div class="img-prato mb-3">
+                            <img src="imgs/negroni.jpg" alt="">
+                        </div>
+                        <h2>Negroni</h2>
+                        <h3>R$:5,90</h3>
+                        <button class="btn-sobre mb-2">Comprar</button>
+                    </div>
+                    
+                   </div>
+
+                   <!--  -->
+
+                   <div class="pratos d-flex justify-content-between align-itens-center container">
+
+                    <div class="prato1 mb-4">
+                        <div class="img-prato mb-3">
+                            <img src="imgs/limon.jpg" alt="">
+                        </div>
+                        <h2>Limoncello</h2>
+                        <h3>R$:5,80</h3>
+                        <button class="btn-sobre mb-2">Comprar</button>
+                    </div>
+    
+                    <div class="prato1 mb-4">
+                        <div class="img-prato mb-3">
+                            <img src="imgs/garibaldi.jpg" alt="">
+                        </div>
+                        <h2>Garibaldi</h2>
+                        <h3>R$:5,00</h3>
+                        <button class="btn-sobre mb-2">Comprar</button>
+                    </div>
+    
+                    <div class="prato1 mb-4">
+                        <div class="img-prato mb-3">
+                            <img src="imgs/amaro.jpg" alt="">
+                        </div>
+                        <h2>Amaro</h2>
+                        <h3>R$:7,10</h3>
+                        <button class="btn-sobre mb-2">Comprar</button>
+                    </div>
+                    
+                   </div>
+
+           </div>
+
+
+           <div id="dissert" role="tabpanel" class="tab-pane fade show">
+
+            <div class="pratos d-flex justify-content-between align-itens-center container mb-4">
+
+                <div class="prato1 mb-4">
+                    <div class="img-prato mb-3">
+                        <img src="imgs/tiramisu.jpg" alt="">
+                    </div>
+                    <h2>Tiramisù</h2>
+                    <h3>R$:5,00</h3>
+                    <button class="btn-sobre mb-2">Comprar</button>
+                </div>
+
+                <div class="prato1 mb-4">
+                    <div class="img-prato mb-3">
+                        <img src="imgs/canoli.jpg" alt="">
+                    </div>
+                    <h2>Cannoli</h2>
+                    <h3>R$:8,80</h3>
+                    <button class="btn-sobre mb-2">Comprar</button>
+                </div>
+
+                <div class="prato1 mb-4">
+                    <div class="img-prato mb-3">
+                        <img src="imgs/panacota.jpg" alt="">
+                    </div>
+                    <h2>Panna Cotta</h2>
+                    <h3>R$:5,90</h3>
+                    <button class="btn-sobre mb-2">Comprar</button>
+                </div>
+                
+               </div>
+
+               <!--  -->
+
+               <div class="pratos d-flex justify-content-between align-itens-center container">
+
+                <div class="prato1 mb-4">
+                    <div class="img-prato mb-3">
+                        <img src="imgs/bacidimama.jpg" alt="">
+                    </div>
+                    <h2>Baci de Mama</h2>
+                    <h3>R$:6,50</h3>
+                    <button class="btn-sobre mb-2">Comprar</button>
+                </div>
+
+                <div class="prato1 mb-4">
+                    <div class="img-prato mb-3">
+                        <img src="imgs/gelato.jpg" alt="">
+                    </div>
+                    <h2>Gelato Italiano</h2>
+                    <h3>R$:4,80</h3>
+                    <button class="btn-sobre mb-2">Comprar</button>
+                </div>
+
+                <div class="prato1 mb-4">
+                    <div class="img-prato mb-3">
+                        <img src="imgs/cassata.jpg" alt="">
+                    </div>
+                    <h2>Cassata Italiana</h2>
+                    <h3>R$:5,40</h3>
+                    <button class="btn-sobre mb-2">Comprar</button>
+                </div>
+                
+               </div>
+
+
+           </div>
+
+
+           </div>    
+            
+          </div>
+
+
+         <%- include('../partials/footer') %> 
+
+
+</body>
+
+</html>

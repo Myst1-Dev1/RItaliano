@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('../partials/head')  %> 
+
+<body>
+
+    <%- include('../partials/header') %> 
+
+  
+
+        <div class="contato">
+
+            <div class="contato-box">
+
+                <h2 class="mb-5 text-center">Envie uma Mensagem</h2>
+
+                <!--  -->
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text bg-danger" id="basic-addon1"> <i class="fa-solid fa-user B"></i> </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text bg-danger" id="basic-addon1"> <i class="fa-solid fa-phone B"></i> </span>
+                    </div>
+                    <input type="tel" class="form-control" placeholder="Telefone" aria-label="Telefone" aria-describedby="basic-addon1">
+                  </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text bg-danger" id="basic-addon1"> <i class="fa-solid fa-envelope B"></i> </span>
+                    </div>
+                    <input type="email" required class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+
+                    <div class="input-group mt-3">
+                        <div class="input-group-prepend">
+                         <span class="input-group-text bg-danger"> <i class="fa-solid fa-message h4"></i> </span> 
+                        </div>
+                        <textarea class="form-control" placeholder="Mensagem" aria-label="With textarea"></textarea>
+                      </div>
+                  </div>
+
+                  <button class="btn-contato" type="submit">Enviar</button>
+
+            </div>
+
+        </div>
+
+
+        <%- include('../partials/footer') %> 
+    
+</body>
+</html>

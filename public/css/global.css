@@ -1,0 +1,413 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(34, 53%, 82%);
+    /* background-image: linear-gradient(180deg, transparent 50%, rgba(255,255,255,.5) 50%);
+    background-size: 50px 50px;  */
+background-image: repeating-linear-gradient(45deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,                  
+  hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
+  hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,                
+  hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
+  hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
+  hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.5) 120px, hsla(197, 62%, 11%, 0.5) 140px       
+  ),
+repeating-linear-gradient(135deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px, 
+  hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
+  hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,                
+  hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
+  hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
+  hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 140px, hsla(197, 62%, 11%, 0.5) 140px, hsla(197, 62%, 11%, 0.5) 160px       
+); 
+    width: 100%;
+    min-height: 100vh;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+
+
+
+html{
+    font-size: calc(60% + 0.8vmin);
+}
+
+/* Menu */
+
+header{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo h1{
+    font-family: 'Libre Baskerville', sans-serif;
+    color: aliceblue;
+    text-shadow: 1px 1px 3px black;
+    padding-right: 15px;
+}
+
+.logo .img-logo{
+    width: 50px;
+    height: 50px;
+}
+
+.logo .img-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-bar ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    animation: opacity 0.8s ease;
+}
+
+@keyframes opacity {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+#nav-bar{
+    display: none;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.fa-times{
+    z-index: 2;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 40px;
+    font-family: Tapestry;
+}
+
+.nav-bar ul li a:hover{
+    color: red;
+}
+
+.active{
+    display: block;
+}
+
+.A{
+    color: aliceblue;
+    font-size: 35px;
+    -webkit-text-stroke: 2px black;
+    cursor: pointer;
+}
+
+/* Banner */
+
+.banner{
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 2px;
+    background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)) ,url(../imgs/bnerrt.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.banner h2{
+    font-family: 'Libre Baskerville', sans-serif;
+}
+
+.container-initial{
+    background-color: #afe4;
+    padding: 10px 0;
+    border-radius: 20px;
+    box-shadow: 0 0 35px black;
+}
+
+.subtitle{
+    text-align: justify;
+    padding: 0 15px;
+}
+
+/* Sobre */
+
+.sobre{
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 2px;
+    padding: 100px 20px;
+}
+
+.sobre h1{
+    font-family: 'Libre Baskerville', sans-serif;
+}
+
+.sobre p{
+    font-size: 16px;
+    text-shadow: 1px 1px 3px black;
+}
+
+.history{
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 2px;
+    padding: 100px 20px;
+    flex-wrap: wrap;
+}
+
+.history h2{
+    font-family: 'Libre Baskerville', sans-serif;
+}
+
+.history p {
+    max-width: 400px;
+    text-shadow: 1px 1px 3px black;
+    font-size: 16px;
+}
+
+.history .history-image{
+    width: 500px;
+    height: 400px;
+}
+
+.history .history-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-sobre{
+    width: 120px;
+    border: none;
+    color: aliceblue;
+    padding: 12px;
+    background-color: rgb(231, 47, 47);
+    text-shadow: 1px 1px 2px black;
+    border-radius: 12px;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 18px;
+    transition: 1s;
+}
+
+.btn-sobre:hover{
+    background-color: lightgreen;
+}
+
+/* Menu */
+
+.menu-text{
+    padding: 100px 0;
+    font-family: 'Libre Baskerville', sans-serif;
+    text-shadow: 1px 1px 3px black; 
+}
+
+.menu-services h2{
+    text-shadow: 1px 1px 3px black;
+    font-family: 'Libre Baskerville', sans-serif;
+}
+
+.services-icons{
+    flex-wrap: wrap;
+}
+
+.service1{
+    width: 300px;
+    background-color: rgb(231, 47, 47);
+    color: aliceblue;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 13px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 0 0 20px black;
+    font-size: 16px;
+}
+
+.service1 i{
+    font-size: 40px;
+    -webkit-text-stroke: 2px black;
+}
+
+.img-service{
+    width: 50px;
+    height: 50px;
+}
+
+.img-service img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-restaurant li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.menu-food{
+    font-family: 'Libre Baskerville', sans-serif;
+    color: aliceblue;
+}
+
+.menu-food h2{
+    font-size: 20px;
+}
+
+.menu-food i {
+    font-size: 30px;
+    -webkit-text-stroke: 2px black;
+}
+
+.pratos{
+    flex-wrap: wrap;
+    transition: 5s;
+}
+
+.prato1{
+    width: 300px;
+    background-color: white;
+    padding: 10px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 20px black;
+    border-radius: 15px;
+}
+
+.img-prato{
+    width: 180px;
+    height: 180px;
+}
+
+.img-prato img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Contato */
+
+.contato{
+    padding: 150px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contato-box{
+    width: 400px;
+    border:1px solid white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contato-box h2{
+    color: aliceblue;
+    font-family: 'Libre Baskerville',sans-serif;
+    text-shadow: 1px 1px 3px black;
+}
+
+.contato-box input{
+    border: none;
+    
+}
+
+.B{
+    font-size: 20px;
+}
+
+.contato-box textarea{
+    resize: none;
+    height: 120px;
+}
+
+.btn-contato{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    transition: 1s;
+    background-color: #dc3545;
+}
+
+.btn-contato:hover{
+    background-color: lightgreen;
+}
+
+/* Footer */
+
+.aliceblue{
+    color: aliceblue;
+}
+
+footer{
+    background-color: rgb(6, 24, 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p a{
+    text-decoration: none;
+    color: aliceblue;
+    transition: 1s;
+}
+
+footer p a:hover{
+    color: red;
+}
+
+.socials-footer i{
+    padding-top: 12px;
+    margin-left: 15px;
+    transition: 1s;
+}
+
+.socials-footer i:hover{
+    color: red;
+}
+
+@media (max-width:991px) {
+    .sobre{
+        flex-wrap: wrap;
+    }
+
+    .menu-food h2{
+        font-size: 12px;
+    }
+
+    .contato-box{
+        width: 300px;
+    }
+}
+
+@media(max-width:320px) {
+    .contato-box{
+        width: 240px;
+    }
+}
